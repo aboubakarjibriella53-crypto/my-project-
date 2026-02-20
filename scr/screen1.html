@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jibriella Aboubakar | Portfolio</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        body {
+            color: white;
+            overflow-x: hidden;
+        }
+        /* BACKGROUND SLIDER */
+        
+        .bg-slider {
+            position: fixed;
+            /stack elements vertically/ top: 0;
+            left: 0;
+            width: 100%;
+            /* control width on large screen */
+            height: 100%;
+            /*adjust height as needed */
+            z-index: -1;
+        }
+        
+        .bg-slider img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+        
+        .bg-slider img.active {
+            opacity: 1;
+        }
+        /* HEADER */
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+        }
+        /* LOGO DESIGN */
+        
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        
+        .logo span {
+            color: #00d9ff;
+        }
+        /* NAV */
+        
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        
+        nav a:hover {
+            color: #00d9ff;
+        }
+        /* HERO SECTION */
+        
+        .hero {
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        /* PROFILE IMAGE */
+        
+        .profile {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid rgba(9, 10, 2, 0.281);
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+        }
+        /* BUTTON */
+        
+        .btn {
+            padding: 12px 25px;
+            background: #00d9ff;
+            border: none;
+            border-radius: 30px;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+        
+        .btn:hover {
+            background: white;
+        }
+        /* SECTIONS */
+        
+        section {
+            padding: 60px 10%;
+            background: rgba(0, 0, 0, 0.5);
+            margin: 40px 0;
+        }
+        /* CONTACT */
+        
+        .contact-item {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+        
+        .contact-item i {
+            margin-right: 10px;
+            color: #00d9ff;
+        }
+        /* FOOTER */
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        
+        @media(max-width:768px) {
+            header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navigation bar section-->
+
+    <!-- BACKGROUND SLIDER -->
+    <div class="bg-slider">
+
+        <img src="ab.png" alt="display as bg-slider">
+        <img src="bc.png" alt="display as bg-slider">
+        <img src="cd.png" alt="display as bg-slider">
+        <img src="de.png" alt="display as bg-slider">
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">Jibriella <span>Aboubakar</span></div>
+        <!--Hamburger menu icon can be place here, controlled by js/css-->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+        <img src="cd.png" class="profile" alt="Profile Photo">
+
+        <h1>Hello, I'm Jibriella Aboubakar</h1>
+        <p class="role" Student> Web & App Developer, UI/UX Designer,</p>
+        <p class="description">crafting beautiful, responsive, and user-friendly digital experiences</p>
+
+        <button class="btn" onclick="scrollToContact()">Contact Me</button>
+    </div>
+
+    <!--other section like about, projects, etc., can follow here-->
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <center>
+            <img src="cd.png" width="300pxpx" height="250px">
+        </center>
+        <who am i></who>
+        <p>
+            i'm a passionate and dedicateed web developer, app developer and ui/ux Designer with a strong foundation in creating beautiful, responsive, and user-friendly digital experience. my journeyin technology is driven by a deep curiosity and commitment to continuous
+            learning. learning. i use tech skills to provide solution to probles faced in my community and beyond
+        </p>
+    </section>
+    <div>
+        <section id="about">
+            <h1>MY SKILLS</h1>
+            Here are the technologies and tools i work with
+            <h2>frontend</h2>
+            <ul>
+                <li>HTML</li>
+                <LI>CSS</LI>
+                <LI>JAVASCRIPT</LI>
+            </ul>
+    </div>
+    </section>
+
+    <div>
+        <section id="about">
+            <h1>MOBILE APP DEVELOPMENT</h1>
+            Flutter(Dart)
+        </section>
+    </div>
+    <div class="interests-container">
+        <section id="about">
+            <h2>Interests</h2>
+            <span class="tag">Web Development</span>
+            <span class="tag">Mobile Apps</span>
+            <span class="tag">Coding</span>
+            <span class="tag">UI/UX Design</span>
+            <span class="tag">Football</span>
+            <span class="tag">Cooking</span>
+    </div>
+
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i> aboubakarjibriella53@gmail.com
+        </div>
+
+        <div class="contact-item">
+            <i class="fas fa-phone"></i> +237 680254460
+        </div>
+
+        <div class="contact-item">
+            <i class="fab fa-whatsapp"></i> +237 680254460
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Jibriella Aboubakar | Portfolio
+    </footer>
+
+    <script>
+        /* BACKGROUND SLIDER ANIMATION */
+        const slides = document.querySelectorAll(".bg-slider img");
+        let index = 0;
+
+        setInterval(() => {
+            slides[index].classList.remove("active");
+            index = (index + 1) % slides.length;
+            slides[index].classList.add("active");
+        }, 4000);
+
+        /* BUTTON SCROLL FUNCTION */
+        function scrollToContact() {
+            document.getElementById("contact").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+</body>
+
+</html>
